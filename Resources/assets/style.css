@@ -1,1 +1,12 @@
-/* Style for homepage */
+/* Common Style for All Pages i.e NavBar */
+
+
+/* Style for Data.html */
+.my-custom-scrollbar {
+    position: relative;
+    height: 400px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
