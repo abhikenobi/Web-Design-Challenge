@@ -1,5 +1,7 @@
 /* Common Style for All Pages i.e NavBar */
-
+body {
+    background: rgb(50, 160, 160);
+}
 
 /* Style for Data.html */
 .my-custom-scrollbar {
