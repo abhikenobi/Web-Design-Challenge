@@ -41,24 +41,24 @@
                   Plots/Graphs
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Graph 1</a></li>
-                  <li><a class="dropdown-item" href="#">Grpah 2</a></li>
-                  <li><a class="dropdown-item" href="#">Graph 3</a></li>
-                  <li><a class="dropdown-item" href="#">Graph 4</a></li>
+                  <li><a class="dropdown-item" href="plot1_temperature.html">Graph 1 - Temperature</a></li>
+                  <li><a class="dropdown-item" href="plot2_humidity.html">Grpah 2 - Humidity</a></li>
+                  <li><a class="dropdown-item" href="plot3_cloudiness.html">Graph 3 - Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="plot4_windspeed">Graph 4 - Wind Speed</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">All Plots</a></li>
+                  <li><a class="dropdown-item" href="comparison.html">All Plots</a></li>
                 </ul>
             </ul>
           </div>
         </div>
       </nav>
     <!-- Heading -->
-    <h1>Latitude & Weather</h1>
+    <!-- <h1>Latitude & Weather</h1> -->
 
     <!-- Summary/Explanation of Project -->
     <div class="container">
-      <div class="col md-4">
-        <div class="card border-primary mb-3" style="max-width: 200rem;">
+      <div class="col-md-8">
+        <div class="card border-primary mb-3" style="max-width: 150rem;">
           <div class="card-header">
             <u>Background</u>
           </div>
@@ -66,8 +66,27 @@
             <h4 class="card-title">Summary: Latitude vs. X</h4>
             <img src="assets/images/lat-vs-temp.png" alt="Latitude vs. Max Temperature" class="description-image">
             <p class="card-text">
-              Through the use of the <a href="https.://openweathermap.org/api":>OpenWeatherAPI</a> and the <a href="https://pypi.org/project/citipy/">CitiPy Python libray</a>,
+              Through the use of the <a href="https.://openweathermap.org/api":>OpenWeatherAPI</a> and the <a href="https://pypi.org/project/citipy/">CitiPy Python libray</a>, weather data for over 544 random cities was retrieved and a dataset was assembled.
             </p>
+            <p class="card-text">
+              After assembly of the <a href="">dataset</a>, Python's Matplotlib library was used in order to explore the relationship between different facets of a city's weather data and its latitude. Some of the factors that were evaluated were: <a href="plot1_temperature.html">temperature</a>, <a href="plot2_humidity.html">humidity</a>, <a href="plot3_cloudiness.html">cloudiness</a>, and <a href="plot4_windspeed.html">wind-speed</a>. This site provides the source data along with visualizations for the aforementioned relationships created as part of the analysis along with explanations and descriptons of any observed correlations and trends.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card border-primary mb-3" style="max-width: 100rem;">
+          <div class="card-header">
+            <u></u>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Visualizations</h4>
+            <div id="images">
+              <a href="plot1_temperature.html"><img src="assets/images/lat-vs-temp.png" alt="Latitude vs. Max Temperature" class="description-image img-thumbnail rounded float-start"></a>
+              <a href="plot2_humidity.html"><img src="assets/images/lat-vs-humidity.png" alt="Latitude vs. Humidity" class="description-image img-thumbnail rounded float-end"></a>
+              <a href="plot3_cloudiness.html"><img src="assets/images/lat-vs-cloudiness.png" alt="Latitude vs. Cloudiness" class="description-image img-thumbnail rounded float-start"></a>
+              <a href="plot4_windspeed.html"><img src="assets/images/lat-vs-windspeed.png" alt="Latitude vs. Wind Speed" class="description-image img-thumbnail rounded float-end"></a>
+            </div>
           </div>
         </div>
       </div>

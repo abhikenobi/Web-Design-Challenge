@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="eng-US">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <!-- Link CSS/Bootstrap files -->
+    <link rel="stylesheet" type="text/css" href="Resources/assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="Resources/assets/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-<meta charset="utf-8">
-
-<!-- Link CSS/Bootstrap files -->
-<link rel="stylesheet" type="text/css" href="Resources/assets/reset.css">
-<link rel="stylesheet" type="text/css" href="Resources/assets/style.css">
-<link rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
-    crossorigin="anonymous">
-
-<title>Data Page</title>
-
+    <title>Data</title>
 </head>
+
 <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Latitude</a>
+          <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Plots/Graphs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="plot1_temperature.html">Graph 1 - Temperature</a></li>
+                  <li><a class="dropdown-item" href="plot2_humidity.html">Grpah 2 - Humidity</a></li>
+                  <li><a class="dropdown-item" href="plot3_cloudiness.html">Graph 3 - Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="plot4_windspeed">Graph 4 - Wind Speed</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="comparison.html">All Plots</a></li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
     
-<<<<<<< HEAD
   <div class=" table-responsive table-wrapper-scroll-y my-custom-scrollbar col-xl-8 table-dark">
   <caption>Weather Data of the cities.</caption>
   <table border="1" class="table table-fixed table-sm table-hover table-striped table-bordered table-dark table-responsive">
-=======
-  <div class=" table-responsive table-wrapper-scroll-y my-custom-scrollbar">
-  <table border="1" class="table table-fixed table-sm table-hover table-striped table-bordered table-dark table-responsive text-nowrap">git 
-    <caption>Weather Data of the cities.</caption>
->>>>>>> 27e684185504ea15483ee1cecbf21754379e8be2
     <thead>
       <tr style="text-align: center;">
         <th>City_ID</th>
